@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-    <div className=' h-14    '>
+    <div className=' h-14'>
         
 
-<div className='container max-w-full flex flex-row justify-evenly items-center mt-3 gap-4  md:gap-40 '>
+<div className='container max-w-full flex flex-row justify-between items-center mt-3 gap-8  md:gap-40  md:px-9 '>
      
 <Link to={'/'}>
     <div className='flex items-center gap-2'>
