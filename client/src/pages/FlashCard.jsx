@@ -1,8 +1,18 @@
 import React from 'react'
 
-function FlashCard() {
+function FlashCard({equation}) {
   return (
-    <div>FlashCard</div>
+ 
+    
+   <div className='text-white text-3xl  '> 
+
+    {
+     equation
+    }
+   </div>
+
+
+   
   )
 }
 
