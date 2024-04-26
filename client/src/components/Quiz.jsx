@@ -30,7 +30,7 @@ function Quiz() {
     }
 }
   return (
-    <div className='max-w-md mx-auto mt-6'>
+    <div className=' sm:px-3  sm:max-w-md mx-auto mt-6'>
     <h2 className='text-2xl font-semibold text-center'>Quiz Section</h2>
     {currentQuestion < questions.length && (
       <div className='mt-5 shadow-lg shadow-slate-600 px-10 py-10' >

@@ -45,7 +45,7 @@ function Card() {
 
   return (
     <div>
-        <div className="max-w-md mx-auto mt-8">
+        <div className="sm:max-w-md sm:mx-auto mt-8">
       <div className="flashcard">
         <div >
           {isFront ? (

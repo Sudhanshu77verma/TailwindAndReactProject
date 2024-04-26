@@ -80,7 +80,7 @@ export default function Home() {
         
     }
   return (
-    <div className= ' mx-auto mt-7 ml-3 h-screen '>
+    <div className= '   mx-auto mt-7 ml-3 h-screen '>
         
     <div className='flex flex-row items-center'>
        
@@ -100,7 +100,7 @@ export default function Home() {
 
     <div className='flex justify-center items-center mt-8'>
       
-      <ul className='flex text-slate-500 items-center gap-10 hover:cursor-pointer   '>
+      <ul className='flex text-slate-500 items-center gap-3  sm:gap-10 hover:cursor-pointer   '>
         <li className='hover:underline  hover:text-blue-800'   > Study  </li>
         
        <Link to={'/quiz'}>
@@ -110,20 +110,20 @@ export default function Home() {
 
        <li className='hover:underline' > Test </li>
         <li className='hover:underline' > Game </li>
-        <li className='hover:underline' > Others </li>
+        <li className='hover:underline hidden sm:block' > Others </li>
       </ul>
    
     </div>
 
     <div className='  flex flex-col justify-center items-center mt-4 gap-5 '>  
-      <div className=' w-96 h-52  bg-gradient-to-r from-blue-500  to-blue-800 rounded-3xl flex justify-center items-center ' >
+      <div className='w-fit px-7 sm:w-96 h-52  bg-gradient-to-r from-blue-500  to-blue-800 rounded-3xl flex justify-center items-center ' >
       <FlashCard className="  " equation={FlashCards[currentFlashCard].equation} >
 
       </FlashCard>
       </div>
   
      
-      <div className='flex flex-row justify-between items-center gap-10 '>
+      <div className='flex flex-row justify-between items-center gap-3  sm:gap-10 '>
 
         <p onClick={()=>setcurrentFlashCard(0)}> 
         <IoReloadOutline className='text-blue-500 text-xl'></IoReloadOutline> </p> 
@@ -143,20 +143,22 @@ export default function Home() {
       </div>
      </div>
 
-     <div className='flex flex-row justify-between items-center mt-8'>
+     <div className='flex flex-row justify-center gap-10 sm:justify-between items-center mt-8'>
 
     
-    <div className='flex gap-6 '>
-     <img src={logo} className='rounded-full shadow-md shadow-slate-600 w-14 h-14 ' alt="" />
+    <div className='flex gap-6 items-center '>
+
+        
+     <img src={logo} className=' rounded-full shadow-md shadow-slate-600 w-5 h-5 sm:w-14 sm:h-14 ' alt="" />
      <div>
         <p className='font-thin text-xs'> Published by</p>
-        <p className='text-2xl'> Hygge<span className='font-semibold text-3xl'>X</span></p>
+        <p className='text-sm sm:text-2xl'> Hygge<span className='font-semibold sm:text-3xl'>X</span></p>
      </div>
     </div>
 
 
 
-    <div className='flex items-center gap-3 '>
+    <div className='flex items-center gap-1 sm:gap-4 '>
     <IoMdAddCircle className='text-xl text-blue-900'></IoMdAddCircle>
     <Link to={'/FlashCard'}  >
      <div className='text-blue-800 text-xl'>
