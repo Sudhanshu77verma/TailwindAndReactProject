@@ -9,7 +9,7 @@ function Login() {
     const [formdata,setformdata] =useState({});
 
     const [showpassword,setshowpassword] = useState(true);
-   console.log(formdata)
+  //  console.log(formdata)
 
     const handlechange=(e)=>{
         setformdata({

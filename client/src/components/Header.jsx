@@ -22,15 +22,15 @@ function Header() {
 </Link>
    
 
-   <div className='flex items-center  gap-4 md:gap-10'> 
-    <Link to={'/'} className='hover:text-blue-950 hover:underline' > Home</Link> 
+   <div className=' text-lg text-slate-950 flex  items-center  gap-4 md:gap-10'> 
+    <Link to={'/'} className='hover:text-blue-950 hover:scale-110' > Home</Link> 
      
-     <Link to={'/FlashCard'} className='text-slate-800 hover:text-blue-950 hover:underline'> FlashCard</Link>
+     <Link to={'/FlashCard'} className=' hover:text-blue-950 hover:scale-110'> FlashCard</Link>
 
-  <Link to={'/contact'}  className='text-slate-800 hover:text-blue-950 hover:underline' > Contact </Link>
+  <Link to={'/contact'}  className=' hover:text-blue-950 hover:scale-110' > Contact </Link>
 
-
-  <Link to={'/Faq'} className='text-slate-800 hover:text-blue-950 hover:underline' > FAQ   </Link>
+  
+  <Link to={'/Faq'} className=' hover:text-blue-950 hover:scale-110' > FAQ   </Link>
    
 
    <Link to={'/login'}>

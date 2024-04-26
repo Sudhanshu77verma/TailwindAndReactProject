@@ -102,8 +102,13 @@ export default function Home() {
       
       <ul className='flex text-slate-500 items-center gap-10 hover:cursor-pointer   '>
         <li className='hover:underline  hover:text-blue-800'   > Study  </li>
-        <li className='hover:underline'  > Quiz </li>
-        <li className='hover:underline' > Test </li>
+        
+       <Link to={'/quiz'}>
+       
+       <li className='hover:underline'  > Quiz </li>
+       </Link>
+
+       <li className='hover:underline' > Test </li>
         <li className='hover:underline' > Game </li>
         <li className='hover:underline' > Others </li>
       </ul>

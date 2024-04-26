@@ -7,6 +7,7 @@ import Card from "./components/Card";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import Signup from "./pages/Signup";
+import Quiz from "./components/Quiz";
 export default function App() {
   return (
     <div>
@@ -21,7 +22,7 @@ export default function App() {
           <Route path="/contact" element={<Contact></Contact>}></Route>
           <Route path={"/Faq"} element={<FAQ></FAQ>}></Route>
          <Route path={'/sign-up'} element={<Signup></Signup>}></Route>
-       
+       <Route path={'/quiz'} element={<Quiz></Quiz>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

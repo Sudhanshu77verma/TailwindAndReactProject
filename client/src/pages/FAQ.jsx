@@ -21,35 +21,35 @@ export default function FAQ() {
              {
                 isopenone && (
                     <div className='mt-2 p-2'>
-                        Yes Education flashCard can be used for all age groups
+                        Yes, Education flashCard can be used for all age groups
                     </div>
                 )
              }
         </div>
         <div className='border border-blue-400 py-4 mt-2'>
             <div onClick={()=>setisopen2(!isopen2)} className='flex justify-between px-2 cursor-pointer'>
-            <p>Can education flashcards be used for all age groups</p>
+            <p>How do education FlashCard work</p>
              
              <span> {isopen2 ? '-':'+'} </span>
              </div>
              {
                 isopen2 && (
                     <div className='mt-2 p-2'>
-                        Yes Education flashCard can be used for all age groups
+                       Flashcards such as this are effective because they promote active recall in the brain, which is the process by which we retrieve a memory
                     </div>
                 )
              }
         </div>
         <div className='border border-blue-400 py-4 mt-2'>
             <div onClick={()=>setisopen3(!isopen3)} className='flex justify-between px-2 cursor-pointer'>
-            <p>Can education flashcards be used for all age groups</p>
+            <p>Can education flashcards be used for test Preparation</p>
              
              <span> {isopen3 ? '-':'+'} </span>
              </div>
              {
                 isopen3 && (
                     <div className='mt-2 p-2'>
-                        Yes Education flashCard can be used for all age groups
+                        Yes, Education flashCard can be used for test Preparation
                     </div>
                 )
              }
