@@ -22,7 +22,7 @@ function Header() {
 </Link>
    
 
-   <div className=' text-lg text-slate-950 flex  items-center  gap-4 md:gap-10'> 
+   <div className=' text-lg text-slate-950 flex  items-center  gap-2 md:gap-10'> 
     <Link to={'/'} className='hover:text-blue-950 hover:scale-110' > Home</Link> 
      
      <Link to={'/FlashCard'} className=' hover:text-blue-950 hover:scale-110'> FlashCard</Link>
