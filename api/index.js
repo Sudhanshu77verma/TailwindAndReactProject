@@ -5,14 +5,19 @@ import authRouter from './routes/auth.route.js'
 import cookieParser from "cookie-parser"
 import path from "path"
 dotenv.config()
-mongoose.connect(process.env.MONGO_DB_URL).then(()=>
-console.log("mongo db connected"))
-.catch((error)=>
-console.log(error))
+const app =express()
+mongoose.connect(process.env.MONGO_DB_URL,{
+    useNewUrlParser: true,
+    useUnifiedTopology:true,
 
+}).then(()=>{
+    console.log(" Mongo db connection is successful")
+}).catch((error)=>{
+    console.log(error)
+})
  const __dirname= path.resolve()
 
-const app =express()
+
 app.use(cookieParser());
 app.use(express.json())
 app.use('/api/auth',authRouter);
